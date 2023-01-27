@@ -26,7 +26,7 @@ public class Ventana_Login {
         salirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                System.exit(0);
             }
         });
     }
@@ -35,6 +35,7 @@ public class Ventana_Login {
         JFrame frame =new JFrame("Ventana_Componentes");
         frame.setContentPane(new Ventana_Login().Panel_Principal);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500,250);
         frame.setVisible(true);
     }
 }
